@@ -9,8 +9,8 @@ int main() {
     int comparaciones = 0;
     int intercambios = 0;
 
-    for (i = 0; i < 8; i++) {
-        for (j = 0; j < 8 - i - 1; j++) {
+    for (i = 0; i < 10; i++) {
+        for (j = 0; j < 10 - i - 1; j++) {
             comparaciones++;
             if (arreglo[j] > arreglo[j + 1]) {
                 intercambios++;
@@ -22,11 +22,11 @@ int main() {
     }
 
     cout << "Arreglo en orden Ascendente:";
-    for (i = 0; i < 8; i++) {
+    for (i = 0; i < 10; i++) {
         cout << arreglo[i] << " ";
     }
     cout << "\nArreglo en orden Descendente: ";
-    for(i=7; i>=0; i--){
+    for(i=9; i>=0; i--){
         cout << arreglo[i] << " ";
     }
 
